@@ -15,7 +15,7 @@ Welcome to the Azure Projects repository! This repository is a collection of var
 
 2. **Getting Started**: Each project provides instructions on getting started, including prerequisites, installation steps, and configuration details.
 
-## Contributing
 
-We welcome contributions! If you have ideas for new projects, improvements, or bug fixes, please follow our [Contribution Guidelines](CONTRIBUTING.md).
+
+
 
