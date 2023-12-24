@@ -27,6 +27,7 @@ The process of signing in via an InPrivate browser window using the newly create
 ![Alt text](../media/LAB_01/13OnlyEntraIDSinceIThasThatRoleAssignedtoUser.png)
 
 ## Dynamic Group Creation and License Activation:
+
 Activation of Microsoft Entra ID Premium P2 licenses was imperative to implement dynamic groups, enriching the identity management ecosystem. 
 ![Alt text](../media/LAB_01/16.EntraIDP2Trial.png)
 
@@ -40,4 +41,5 @@ Simultaneously, an assigned membership group, 'IT Lab Administrators,' was creat
 ![Alt text](../media/LAB_01/20.FirstSecutiyGroupDetails.png)
 
 ## Conclusion:
+
 This project encapsulated an immersive journey into Azure's identity management realm, showcasing the provisioning of users, role assignments, and the creation of dynamic and assigned groups within the Microsoft Entra ID ecosystem. The hands-on experience underscored the significance of identity governance and access control, setting the stage for a deeper exploration of Azure's identity and access management capabilities.
