@@ -75,7 +75,8 @@ Navigating to the Azure portal, the cleanup process starts by accessing the User
 
 ### Role Assignment Removal
 
-```JSON
+```json
+
  $scope = (Get-AzRoleDefinition -Name 'Support Request Contributor (Custom)').AssignableScopes | Where-Object {$_ -like '*managementgroup*'}
     
  Remove-AzRoleAssignment -ObjectId '2c0d1dc9-9190-4c9b-afcb-c0e9e817a9f7' -RoleDefinitionName 'Support Request Contributor (Custom)' -Scope $scope
