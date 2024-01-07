@@ -22,7 +22,7 @@ Embarking on the first task of our tagging adventure, I'll guide you through the
 
 To start, I navigated to the Azure portal and dove into a PowerShell session within the Cloud Shell, gaining a sense of behind-the-scenes operations. In case the "You have no storage mounted" message popped up, a simple solution was to select the lab's subscription and click 'Create storage,' resembling the setup of a personalized workspace.
 
-![PowerShell](../media/LAB_02b/01_Runninf_df_in_CloudShell.png)
+![CloudSHell](../media/LAB_02b/01_Runninf_df_in_CloudShell.png)
 
 Executing a straightforward command, 'df,' in the Cloud Shell unveiled the name of the storage account working behind the scenes. This simple magic trick allowed me to identify the Cloud Shell's home drive path, providing insights into the system's setup.
 
@@ -32,7 +32,7 @@ Returning to the Azure portal, I located the Storage accounts section, where I s
 
 ![FirstStorageAccount](../media/LAB_02b/02_Corresponding_StorageAccount.png)
 
-Within the storage account blade, I clicked on the link representing the resource group's name, entering a metaphorical room where all the goodies are stored. Navigating to the Tags section, I embarked on the drama of tag creation, assigning a new tag named "Role" with the special value "Infra." 
+Within the storage account blade, I clicked on the link representing the resource group's name, entering a metaphorical room where all the goodies are stored. Navigating to the Tags section, I embarked on the drama of tag creation, assigning a new tag named "Role" with the special value "Infra."
 
 ![TagCreation](../media/LAB_02b/03_CreatingTagsOnTheResourceGroup.png)
 
@@ -46,7 +46,7 @@ In the second task, I harnessed the capabilities of Azure Policy to establish an
 
 ![PolicyHomePage](../media/LAB_02b/05_PolicyHomePage.png)
 
-Amidst the array of built-in policies, my attention honed in on the "Require a tag and its value on resources" rule, serving as a robust mechanism to ensure proper labeling. Activating this rule felt like assigning a critical task, prompting Azure to act as a vigilant guardian, ensuring adherence to tagging standards.     
+Amidst the array of built-in policies, my attention honed in on the "Require a tag and its value on resources" rule, serving as a robust mechanism to ensure proper labeling. Activating this rule felt like assigning a critical task, prompting Azure to act as a vigilant guardian, ensuring adherence to tagging standards.
 
 ![DefaultPolicy](../media/LAB_02b/06_DefaultPolicy.png)
 
@@ -58,8 +58,8 @@ Further customization involved specifying the tag's name as "Role" and its value
 
 ![PolicyPage](../media/LAB_02b/07_PolicyAssignment_a.png)
 
-
 ![PolicyPage](../media/LAB_02b/07_PolicyAssignment_b.png)
+
 The true litmus test unfolded as I attempted to create a Storage Account without the mandatory tag. The deployment's failure underscored the effectiveness of the policy in preventing the creation of resources without adherence to tagging rules. Investigating the failure through the Notifications list provided insights into the reasons behind the policy intervention. This episode reinforced the notion that, through Azure Policy, a structured and systematic approach to resource tagging was not just established but successfully enforced.
 
 ![FailedPolicy](../media/LAB_02b/09_PolicyFailed.png)
@@ -72,16 +72,8 @@ Embracing a new tagging strategy, I initiated the setup by clicking on "Assign p
 
 With a name bestowed upon the new plan – "Inherit the Role tag and its Infra value from the Cloud Shell resource group if missing" – the setup was confirmed with a click of the Create button. No elaborate effects, just a clear and direct configuration. Testing the waters, I created another Storage Account in the same familiar space as before. This time, the process flowed smoothly without any hiccups, indicating the success of the new plan.
 
-
 ![InheritedPolicy](../media/LAB_02b/11_notagesSpecified.png)
 
 The result was verified by checking the newly created Storage Account, revealing the automatic presence of the "Role" tag with the value "Infra." It was akin to witnessing magic, albeit in its simplest form. This marked the conclusion of our journey – no superhero theatrics, just a smart and pragmatic approach to ensure adherence to tagging rules. For a visual recount of this swift and effective Azure governance episode, check out the GitHub page, akin to a short story showcasing how Azure keeps things impeccably neat and tidy.
 
 ![InheritedPolicy](../media/LAB_02b/12_Tags_Inherited.png)
-
-
-
-
-
-
-
