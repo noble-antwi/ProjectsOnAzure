@@ -15,7 +15,20 @@ At Contoso, the need to efficiently manage Azure resources prompted the pursuit 
 * Applying tagging through remediation via Azure Policy
 
 Delving into the world of Azure governance, I set out to achieve these objectives to streamline resource management and ensure compliance across the board.
+****************************************************************
+Embarking on the first task of our tagging adventure, I'll guide you through the process of creating and assigning tags to an Azure resource group. Join me as I share the steps and insights gained along this personalized journey.
 
+To start, I navigated to the Azure portal and dove into a PowerShell session within the Cloud Shell, gaining a sense of behind-the-scenes operations. In case the "You have no storage mounted" message popped up, a simple solution was to select the lab's subscription and click 'Create storage,' resembling the setup of a personalized workspace.
+
+Executing a straightforward command, 'df,' in the Cloud Shell unveiled the name of the storage account working behind the scenes. This simple magic trick allowed me to identify the Cloud Shell's home drive path, providing insights into the system's setup.
+
+Returning to the Azure portal, I located the Storage accounts section, where I selected the storage account matching the earlier mysterious code. This step felt akin to finding a secret door leading to treasures, unveiling the infrastructure supporting the operations.
+
+Within the storage account blade, I clicked on the link representing the resource group's name, entering a metaphorical room where all the goodies are stored. Navigating to the Tags section, I embarked on the drama of tag creation, assigning a new tag named "Role" with the special value "Infra." This process mirrored the assignment of roles to the superheroes of Azure.
+
+Hitting the 'Apply' button, it felt like casting a wizard's spell as the tag was successfully created, officially tagging the resource group as "Infra." To ensure everything worked as expected, a quick check on the ellipsis and selecting 'Edit tags' revealed that the new tag wasn't automatically assigned. This step resembled a routine check to ensure all tools are in the right place after completing a task
+
+*****************************************************************
 ## Portal - Personalised Tagging Adventure.
 
 Let's embark on the journey of creating and assigning tags to an Azure resource group. In this task, I'll walk you through the steps, sharing my experiences along the way.
@@ -52,7 +65,7 @@ This therefore indicates that the tags will not be automatically applied to reos
 
 ![NotApplieAutomatically](../media/LAB_02b/04_TagsNotAssignedAutomatically.png)
 
-## Enforce Tagging via an Azure Policy - My Tagging Superpower in Action
+## Implementing Precision: Azure Policy for Robust Resource Tagging
 
 In the second task, I harnessed the capabilities of Azure Policy to establish and enforce precise tagging standards for resources. Imagine this as providing each resource with a clear identifier, ensuring they navigate the expansive Azure environment with purpose. Navigating the Azure portal, I took on the role of a detective, seeking out the Policy section and exploring Definitions within the Authoring section – essentially consulting Azure's rulebook..
 
