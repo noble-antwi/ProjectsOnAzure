@@ -9,6 +9,7 @@ This repository is a testament to my journey toward mastering Azure administrati
 The AZ-104 Microsoft Azure Administrator certification is a pivotal step in establishing proficiency in Azure administration. To prepare thoroughly for this exam, I've meticulously planned a sequence of labs covering a wide array of Azure functionalities. Each lab is meticulously structured to ensure a comprehensive understanding of Azure's key areas.
 
 ## Labs and Modules
+
 I've organized my preparatory plan into distinct modules, each focusing on critical aspects of Azure administration:
 
 * Administer Identity
