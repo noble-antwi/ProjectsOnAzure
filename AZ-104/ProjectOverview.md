@@ -12,8 +12,9 @@ The AZ-104 Microsoft Azure Administrator certification is a pivotal step in esta
 
 I've organized my preparatory plan into distinct modules, each focusing on critical aspects of Azure administration:
 
-* Administer Identity
-* Administer Governance and Compliance
+* [Administer Identity](../AZ-104/Labs/LAB_01-Manage_Entra_ID_Identities.md)
+* [Administer Governance and Compliance](../AZ-104/Labs/Lab%2002a%20-%20Manage%20Subscriptions%20and%20RBAC.md)
+* [Administer Governance and Compliance](../AZ-104/Labs/Lab%2002b%20-%20Manage%20Governance%20via%20Azure%20Policy.md)
 * Administer Azure Resources
 * Administer Virtual Networking
 * Administer Intersite Connectivity
